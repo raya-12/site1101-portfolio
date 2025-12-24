@@ -3,34 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Raya Mammadtagiyeva - Home</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+    <nav>
+        <div class="container">
+            <div class="logo" style="color:#b47aff;">Raya Mammadtagiyeva</div>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html" style="color:#fff;">Home</a></li>
+                <li><a href="about.html" style="color:#fff;">About</a></li>
+                <li><a href="projects.html" style="color:#fff;">Projects</a></li>
+                <li><a href="https://github.com/YOUR_USERNAME" target="_blank" style="color:#fff;">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Hello! I'm [Your Name], a passionate [Your Profession]. This is my portfolio where you can find my work and learn more about me.</p>
-        </section>
-        <section>
-            <h2>Highlights</h2>
-            <p>Check out some of my recent projects below:</p>
-            <!-- Add project highlights here -->
-        </section>
-    </main>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Raya Mammadtagiyeva" class="profile-img">
+            <h1 style="color:#35424a;">Hi, I'm Raya Mammadtagiyeva</h1>
+            <p style="color:#35424a;">Computer Science Student | Web Developer | Problem Solver</p>
+            <p style="color:#35424a;">I'm passionate about creating innovative solutions through technology.</p>
+            <div class="social-links">
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" title="GitHub" style="color:#b47aff;">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.codecademy.com/profiles/YOUR_USERNAME" target="_blank" title="Codecademy" style="color:#b47aff;">
+                    <i class="fas fa-code"></i>
+                </a>
+                <a href="https://github.com/YOUR_USERNAME/my-portfolio" target="_blank" title="Repository" style="color:#b47aff;">
+                    <i class="fas fa-folder-open"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Raya Mammadtagiyeva. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript | Hosted on GitHub Pages</p>
+            <div class="social-links">
+                <a href="https://github.com/YOUR_USERNAME" target="_blank" style="color:#b47aff;">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.codecademy.com/profiles/YOUR_USERNAME" target="_blank" style="color:#b47aff;">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+        </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>

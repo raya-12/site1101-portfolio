@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* Subtle purple gradient background, minimal fade */
+    background: linear-gradient(to left, #b47aff 0%, #b47aff 80%, #f4f4f4 100%);
 }
 
 header {
@@ -32,6 +33,24 @@ section {
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Project card styles */
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 
+        transform 0.3s cubic-bezier(0.4,0.2,0.2,1), 
+        box-shadow 0.3s cubic-bezier(0.4,0.2,0.2,1);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-card:hover {
+    transform: translateY(-16px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    z-index: 2;
 }
 
 footer {
