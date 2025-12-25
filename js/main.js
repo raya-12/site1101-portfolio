@@ -1,29 +1,19 @@
-// Responsive navigation menu toggle
 function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
 }
 
-// Smooth scroll for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href').substring(1);
-        const target = document.getElementById(targetId);
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
+        document.getElementById('nav-menu').classList.remove('active');
     });
-});
-
-// Add a simple fade-in animation for hero section
-window.addEventListener('DOMContentLoaded', () => {
-    const hero = document.querySelector('.hero-content');
-    if (hero) {
-        hero.style.opacity = 0;
-        hero.style.transition = 'opacity 1.2s';
-        setTimeout(() => {
-            hero.style.opacity = 1;
-        }, 200);
-    }
 });
