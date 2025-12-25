@@ -6,6 +6,11 @@
     <title>Raya Mammadtagiyeva - About</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media (max-width: 768px) {
+            .about-sections { flex-direction: column !important; }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -22,8 +27,8 @@
     </nav>
     <main style="min-height: 60vh;">
         <div style="display: flex; flex-direction: column; align-items: center; max-width: 1200px; margin: 0 auto; padding: 20px;">
-            <img src="images/profile.jpg" alt="Raya Mammadtagiyeva" class="profile-img" style="margin-bottom: 40px;">
-            <div style="display: flex; gap: 40px; width: 100%;">
+            <img src="images/profile.jpg" alt="Raya Mammadtagiyeva" style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%; border: 4px solid #ffffff; margin-bottom: 40px; box-shadow: 0 4px 24px rgba(52, 152, 219, 0.15);">
+            <div class="about-sections" style="display: flex; gap: 40px; width: 100%;">
                 <section style="flex: 1;">
                     <h2 style="color:#35424a;">About Me</h2>
                     <p style="color:#35424a;">
